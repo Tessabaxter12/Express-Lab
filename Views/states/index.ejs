@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express-Lab</title>
+</head>
+<body>
+<style>
+body    {background-color: grey} 
+h1      {color :blue}
+body    {color: blue}
+</style>
+    <h1>States Traveled To</h1>
+    <ul>
+        <% states.forEach(function(s) { %>
+            <li>
+                <%= s.state %>
+                :  
+                <%= s.traveled ? 'Yes' : 'No' %>
+            </li>    
+        <% }); %>
+    </ul>
+</body>
